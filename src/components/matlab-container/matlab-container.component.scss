@@ -1,0 +1,17 @@
+@import "../../colors.scss";
+
+.matlab-container {
+    width: 100%;
+    height: 100%;
+
+    .header {
+        .mat-icon {
+            font-size: 2em;
+            color: $toolstrip-icon-color;
+        }
+        p {
+            color: $toolstrip-icon-desc-color;
+            margin: 0.25em 0;
+        }
+    }
+}

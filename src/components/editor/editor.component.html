@@ -1,0 +1,28 @@
+<div class="editor" layout="row" layout-align="start stretch">
+    <div class="share-tab">
+
+    </div>
+    <div class="container" layout="column" layout-align="start center">
+        <div *ngIf="isShared" class="user-tab" layout="row" layout-align="stretch start">
+
+        </div>
+        <!-- <div class="line-tab" layout="row" layout-align="stretch start">
+
+        </div> -->
+        <div class="edit-area" layout="column" layout-align="stretch start">
+            <!-- <div class="code-area">
+                <div class="code-line" *ngFor="let line of code; let i = index"
+                 contenteditable="true" (keypress)="onContentKey($event, i)">
+                </div>
+            </div> -->
+            <div class="monaco">
+                <ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code"
+                (input)="onCodeChange($event)">
+                </ngx-monaco-editor>
+            </div>
+            <div class="output-area">
+                
+            </div>
+        </div>
+    </div>
+</div>

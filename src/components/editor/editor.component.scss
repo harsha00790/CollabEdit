@@ -1,0 +1,50 @@
+// :host ::ng-deep {
+
+// }
+
+::ng-deep .editor {
+    .edit-area {
+        .view-line {
+            text-align: start !important;
+        }
+    }
+}
+
+.editor {
+  .share-tab {
+
+  }
+
+  .container {
+      display: flex;
+      flex-direction: row;
+    .user-tab {
+        width: 50px;
+        min-height: 95%;
+        background: grey;
+    }
+
+    .line-tab {
+
+    }
+
+    .edit-area {
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 100px);
+        .monaco {
+            max-width: 80%;
+        }
+      .code-area {
+        .code-line {
+          text-align: start;
+          outline: none !important;
+        }
+      }
+      .output-area {
+        background: lightgray;
+        max-width: 10%;
+      }
+    }
+  }
+}
