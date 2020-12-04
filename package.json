@@ -27,7 +27,7 @@
     "easymde": "^2.8.0",
     "echarts": "4.2.1",
     "hammerjs": "^2.0.8",
-    "highlight.js": "9.13.1",
+    "highlight.js": "10.4.1",
     "monaco-editor": "^0.17.0",
     "ngx-monaco-editor": "^8.1.1",
     "rxjs": "6.5.3",
